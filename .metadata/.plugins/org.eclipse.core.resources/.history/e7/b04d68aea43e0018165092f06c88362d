@@ -1,0 +1,8 @@
+import java.awt.List;
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+
+public interface IServicoRemVeterinario extends Remote{
+	void inserir(Veterinario p) throws RemoteException;
+	List<Veterinario> listarVete() throws RemoteException;
+}

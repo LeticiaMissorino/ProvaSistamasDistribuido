@@ -1,0 +1,20 @@
+import java.rmi.Naming;
+
+public class AppPrincipal {
+	
+	
+	IServicoRemVeterinario objVet = (IServicoRemVeterinario) Naming.lookup("rmi://localhost:8282/prova");
+
+	Veterinario v1 = new Veterinario();
+
+	 v1.
+
+
+/*
+	for(Pessoa professor : objPessoa.listarPessoa()) {
+		System.out.println("ID:" + professor.getId());
+		System.out.println("Nome:" + professor.getNome());
+		System.out.println("Telefone:" + professor.getTelefone());
+		System.out.println("Cidade:" + professor.getCidade());}
+*/
+}

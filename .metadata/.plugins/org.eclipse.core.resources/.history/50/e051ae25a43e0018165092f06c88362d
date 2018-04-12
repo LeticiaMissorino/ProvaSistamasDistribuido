@@ -1,0 +1,18 @@
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+import java.util.ArrayList;
+import java.util.List;
+
+public class VeterinarioImpl  extends UnicastRemoteObject implements IServicoRemoto{
+
+	private static List<Veterinario> lstVet = new ArrayList<>();
+	
+	public VeterinarioImpl() throws RemoteException{}
+	
+	public void inserir(Veterinario p) throws RemoteException{
+		lstVet.add(p);		
+	}
+	public List<Veterinario> listarPessoa() throws RemoteException{
+		return lstVet;
+
+}
